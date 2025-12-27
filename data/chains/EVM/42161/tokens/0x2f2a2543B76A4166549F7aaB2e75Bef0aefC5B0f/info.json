@@ -1,0 +1,12 @@
+{
+    "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+    "status": "safe",
+    "chainId": "42161",
+    "chainName": "Arbitrum One",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "WBTC",
+        "note": "Token addresses on Arbitrum One (Chain ID: 42161), including ARB, USDT, USDC, WETH, WBTC, DAI, GMX, GRAIL, RDNT"
+    }
+}

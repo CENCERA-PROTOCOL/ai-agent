@@ -1,0 +1,12 @@
+{
+    "address": "0x8544fe9d190f09226e60978716467ce77f506823",
+    "status": "safe",
+    "chainId": "8453",
+    "chainName": "Base",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Token addresses on Base (Chain ID: 8453), including WETH, USDC, DAI, AERO, cbETH, DEGEN, BRETT, etc."
+    }
+}

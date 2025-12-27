@@ -1,0 +1,24 @@
+{
+    "name": "The Open Network Mainnet",
+    "chainId": "ton",
+    "shortName": "ton",
+    "chain": "TON",
+    "nativeCurrency": {
+        "name": "Toncoin",
+        "symbol": "TON",
+        "decimals": 9
+    },
+    "rpc": [
+        "https://toncenter.com/api/v2/jsonRPC",
+        "https://mainnet.tonhubapi.com/jsonRPC"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "Tonviewer",
+            "url": "https://tonviewer.com",
+            "standard": "none"
+        }
+    ],
+    "infoURL": "https://ton.org"
+}

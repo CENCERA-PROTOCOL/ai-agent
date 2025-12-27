@@ -1,0 +1,12 @@
+{
+    "address": "Prime Machin (Collection ID varies by marketplace)",
+    "status": "safe",
+    "chainId": "sui",
+    "chainName": "Sui",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Prime Machin NFT Collection",
+        "note": "NFTs on Sui are Objects with unique IDs. Collections are often indexed by their Creator Address or 'Package ID' on marketplaces. Specific static collection 'contract addresses' are less common than on EVM."
+    }
+}

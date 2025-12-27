@@ -1,0 +1,26 @@
+{
+    "name": "BNB Smart Chain Mainnet",
+    "chainId": 56,
+    "shortName": "bnb",
+    "chain": "BSC",
+    "networkId": 56,
+    "nativeCurrency": {
+        "name": "BNB",
+        "symbol": "BNB",
+        "decimals": 18
+    },
+    "rpc": [
+        "https://binance.llamarpc.com",
+        "https://bsc-dataseed.binance.org",
+        "https://rpc.ankr.com/bsc"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "BscScan",
+            "url": "https://bscscan.com",
+            "standard": "EIP3091"
+        }
+    ],
+    "infoURL": "https://www.bnbchain.org"
+}

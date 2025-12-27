@@ -1,0 +1,12 @@
+{
+    "address": "0x3019BF2a2eF8040C242C9a4c5c4BD4C81678b2A1",
+    "status": "safe",
+    "chainId": "56",
+    "chainName": "Binance Smart Chain",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "GMT",
+        "note": "Token addresses on Binance Smart Chain (Chain ID: 56), including WBNB, BUSD, USDT, USDC, CAKE, ETH, BTCB, etc."
+    }
+}

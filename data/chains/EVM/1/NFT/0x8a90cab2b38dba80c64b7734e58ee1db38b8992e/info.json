@@ -1,0 +1,12 @@
+{
+    "address": "0x8a90cab2b38dba80c64b7734e58ee1db38b8992e",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Doodles",
+        "note": "NFT collection addresses on Ethereum Mainnet (Chain ID: 1)"
+    }
+}

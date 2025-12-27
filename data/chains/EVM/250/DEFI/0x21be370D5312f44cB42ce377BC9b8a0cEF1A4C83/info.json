@@ -1,0 +1,12 @@
+{
+    "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+    "status": "safe",
+    "chainId": "250",
+    "chainName": "Fantom",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "DeFi protocol addresses on Fantom (Chain ID: 250), including SpookySwap, Beethoven X, Scream, Geist, Curve"
+    }
+}

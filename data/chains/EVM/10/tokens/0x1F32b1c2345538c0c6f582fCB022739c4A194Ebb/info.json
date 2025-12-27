@@ -1,0 +1,12 @@
+{
+    "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
+    "status": "safe",
+    "chainId": "10",
+    "chainName": "Optimism",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Token addresses on Optimism Mainnet (Chain ID: 10), including OP, USDT, USDC, WETH, DAI, WBTC, etc."
+    }
+}

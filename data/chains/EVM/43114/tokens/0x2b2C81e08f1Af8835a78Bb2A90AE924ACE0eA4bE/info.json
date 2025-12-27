@@ -1,0 +1,12 @@
+{
+    "address": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+    "status": "safe",
+    "chainId": "43114",
+    "chainName": "Avalanche C-Chain",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Token addresses on Avalanche C-Chain (Chain ID: 43114), including WAVAX, USDC.e, USDT.e, USDT, WETH.e, BTC.b, JOE, PNG, QI, sAVAX, DAI.e, MIM"
+    }
+}

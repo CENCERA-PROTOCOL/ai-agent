@@ -1,0 +1,8 @@
+{
+    "scamAddresses": [],
+    "safeAddresses": [],
+    "note": "Wallet addresses: Community Pool is a Module Account ('Module: distribution'). Foundation wallets are not public. Consumer Chains (Neutron, Stride) are secured by the Hub.",
+    "lastUpdated": "2025-12-24",
+    "chainId": "cosmoshub-4",
+    "category": "wallets"
+}

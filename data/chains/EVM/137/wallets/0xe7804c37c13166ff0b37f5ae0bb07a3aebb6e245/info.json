@@ -1,0 +1,12 @@
+{
+    "address": "0xe7804c37c13166ff0b37f5ae0bb07a3aebb6e245",
+    "status": "safe",
+    "chainId": "137",
+    "chainName": "Polygon",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on Polygon (Chain ID: 137), including Polygon Foundation and Binance Hot Wallets"
+    }
+}

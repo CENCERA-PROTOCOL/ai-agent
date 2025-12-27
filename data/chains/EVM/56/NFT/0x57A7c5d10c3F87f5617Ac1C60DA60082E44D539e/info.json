@@ -1,0 +1,12 @@
+{
+    "address": "0x57A7c5d10c3F87f5617Ac1C60DA60082E44D539e",
+    "status": "safe",
+    "chainId": "56",
+    "chainName": "Binance Smart Chain",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on Binance Smart Chain (Chain ID: 56), including Mobox, Pancake Squad, etc."
+    }
+}

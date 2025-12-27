@@ -1,0 +1,12 @@
+{
+    "address": "0x4E15361FD6b4BB609Fa63C81A6db9Ea1ce3dd721",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Token addresses on Ethereum Mainnet (Chain ID: 1). Includes Top 50 generic ERC20 tokens."
+    }
+}

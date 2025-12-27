@@ -1,0 +1,12 @@
+{
+    "address": "0xf932dcb9835e681b21d2f411ef99f4f5e577e6ac299eebee2272a39fb348f702",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "1",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection creator addresses on Aptos, including Aptos Monkeys and Bruh Bears. Aptos NFTs are typically identified by Creator Address + Collection Name."
+    }
+}

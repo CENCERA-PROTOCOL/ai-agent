@@ -1,0 +1,12 @@
+{
+    "address": "0xcf91b34c204c230dfa778659dcc25aa210195e20",
+    "status": "safe",
+    "chainId": "43114",
+    "chainName": "Avalanche C-Chain",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on Avalanche C-Chain (Chain ID: 43114), including Dokyo, Chikn, Roostr, FarmLand, The Secret Files (Roco)"
+    }
+}

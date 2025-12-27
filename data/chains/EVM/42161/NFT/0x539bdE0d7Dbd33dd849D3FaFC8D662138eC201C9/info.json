@@ -1,0 +1,12 @@
+{
+    "address": "0x539bdE0d7Dbd33dd849D3FaFC8D662138eC201C9",
+    "status": "safe",
+    "chainId": "42161",
+    "chainName": "Arbitrum One",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on Arbitrum One (Chain ID: 42161), including Smol Brains, The Beacon, Treasure DAO, Gems"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "address": "EQB3ncyBUTjZUA5EnFKR5_EnOMI9V1tTEAAPaiU71gc4TiUt",
+    "status": "safe",
+    "chainId": "ton",
+    "chainName": "TON (The Open Network)",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "STON.fi DEX",
+        "note": "DeFi Protocol Addresses on TON: DeDust (Factory), STON.fi (Router/Core), Evaa Protocol (Master)."
+    }
+}

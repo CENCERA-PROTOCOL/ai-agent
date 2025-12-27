@@ -1,0 +1,12 @@
+{
+    "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "status": "safe",
+    "chainId": "56",
+    "chainName": "Binance Smart Chain",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "WBNB",
+        "note": "Token addresses on Binance Smart Chain (Chain ID: 56), including WBNB, BUSD, USDT, USDC, CAKE, ETH, BTCB, etc."
+    }
+}

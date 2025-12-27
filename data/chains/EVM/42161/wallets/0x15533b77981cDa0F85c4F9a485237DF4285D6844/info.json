@@ -1,0 +1,12 @@
+{
+    "address": "0x15533b77981cDa0F85c4F9a485237DF4285D6844",
+    "status": "safe",
+    "chainId": "42161",
+    "chainName": "Arbitrum One",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on Arbitrum One (Chain ID: 42161), including Foundation Vesting, Sequencer, Deployer"
+    }
+}

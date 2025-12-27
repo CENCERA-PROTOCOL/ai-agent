@@ -1,0 +1,12 @@
+{
+    "address": "0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "ENS: Ethereum Name Service",
+        "note": "NFT collection addresses on Ethereum Mainnet (Chain ID: 1)"
+    }
+}

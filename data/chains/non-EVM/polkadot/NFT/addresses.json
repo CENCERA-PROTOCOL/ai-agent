@@ -1,0 +1,10 @@
+{
+    "scamAddresses": [],
+    "safeAddresses": [
+        "UniqueNetwork:435"
+    ],
+    "note": "NFTs on Polkadot: Managed via Asset Hub 'Uniques'/'NFTs' pallets or parachains like Unique Network. Collections are identified by integer Collection IDs (e.g., DEDMINE ID 435 on Unique Network).",
+    "lastUpdated": "2025-12-24",
+    "chainId": "polkadot",
+    "category": "NFT"
+}

@@ -1,0 +1,11 @@
+{
+    "address": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5",
+    "status": "safe",
+    "chainId": "1",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Compound V3 Ethereum",
+        "note": "DeFi protocol addresses on Ethereum Mainnet (Chain ID: 1), including Uniswap, Aave, Compound, MakerDAO, SushiSwap, Balancer, Curve, Lido"
+    }
+}

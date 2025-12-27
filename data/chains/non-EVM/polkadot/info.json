@@ -1,0 +1,24 @@
+{
+    "name": "Polkadot Relay Chain",
+    "chainId": "polkadot",
+    "shortName": "dot",
+    "chain": "Polkadot",
+    "nativeCurrency": {
+        "name": "Polkadot",
+        "symbol": "DOT",
+        "decimals": 10
+    },
+    "rpc": [
+        "https://rpc.polkadot.io",
+        "wss://rpc.polkadot.io"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "Subscan",
+            "url": "https://polkadot.subscan.io",
+            "standard": "none"
+        }
+    ],
+    "infoURL": "https://polkadot.network"
+}

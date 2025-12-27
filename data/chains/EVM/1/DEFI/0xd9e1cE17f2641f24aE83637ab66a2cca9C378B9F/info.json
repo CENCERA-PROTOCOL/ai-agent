@@ -1,0 +1,11 @@
+{
+    "address": "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F",
+    "status": "safe",
+    "chainId": "1",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "SushiSwap Router",
+        "note": "DeFi protocol addresses on Ethereum Mainnet (Chain ID: 1), including Uniswap, Aave, Compound, MakerDAO, SushiSwap, Balancer, Curve, Lido"
+    }
+}

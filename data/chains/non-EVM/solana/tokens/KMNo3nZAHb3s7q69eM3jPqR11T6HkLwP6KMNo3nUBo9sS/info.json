@@ -1,0 +1,12 @@
+{
+    "address": "KMNo3nZAHb3s7q69eM3jPqR11T6HkLwP6KMNo3nUBo9sS",
+    "status": "safe",
+    "chainId": "solana",
+    "chainName": "Solana",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Kamino Finance",
+        "note": "Token addresses on Solana (Mainnet Beta), including SOL (native), USDC, USDT, JUP, BONK, WIF, PYTH, JitoSOL, RENDER, mSOL, KMNO, ORCA"
+    }
+}

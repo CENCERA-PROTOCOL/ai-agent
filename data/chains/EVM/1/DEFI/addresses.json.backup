@@ -1,0 +1,18 @@
+{
+    "scamAddresses": [],
+    "safeAddresses": [
+        "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+        "0xE592427A0AEce92De3Edee1F18E0157C05861564",
+        "0x87870Bca3f6dC0640aa2Ccde0E737ef3EDC96dCD",
+        "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5",
+        "0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B",
+        "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F",
+        "0xBA12222222222222222222222222222222222222",
+        "0xeA6876DD8fFcdF35Dbc5F3b08703205E08783205E0",
+        "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84"
+    ],
+    "note": "DeFi protocol addresses on Ethereum Mainnet (Chain ID: 1), including Uniswap, Aave, Compound, MakerDAO, SushiSwap, Balancer, Curve, Lido",
+    "lastUpdated": "2025-12-24",
+    "chainId": "1",
+    "category": "DEFI"
+}

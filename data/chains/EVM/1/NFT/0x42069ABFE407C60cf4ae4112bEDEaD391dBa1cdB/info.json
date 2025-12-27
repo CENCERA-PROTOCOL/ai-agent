@@ -1,0 +1,12 @@
+{
+    "address": "0x42069ABFE407C60cf4ae4112bEDEaD391dBa1cdB",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "ASM Aifa",
+        "note": "NFT collection addresses on Ethereum Mainnet (Chain ID: 1)"
+    }
+}

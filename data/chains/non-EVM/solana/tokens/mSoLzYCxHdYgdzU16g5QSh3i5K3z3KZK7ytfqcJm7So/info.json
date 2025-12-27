@@ -1,0 +1,12 @@
+{
+    "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+    "status": "safe",
+    "chainId": "solana",
+    "chainName": "Solana",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Marinade Staked SOL",
+        "note": "Token addresses on Solana (Mainnet Beta), including SOL (native), USDC, USDT, JUP, BONK, WIF, PYTH, JitoSOL, RENDER, mSOL, KMNO, ORCA"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "address": "Anonymous Numbers (Fragment)",
+    "status": "safe",
+    "chainId": "ton",
+    "chainName": "TON (The Open Network)",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Fragment Anonymous Numbers",
+        "note": "NFTs on TON: Telegram Usernames and Anonymous Numbers are major collections traded on Fragment. Individual items have unique addresses. 'EQCA1...' is the standard NFT Collection contract code hash or a common reference."
+    }
+}

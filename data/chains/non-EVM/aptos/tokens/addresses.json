@@ -1,0 +1,20 @@
+{
+    "scamAddresses": [],
+    "safeAddresses": [
+        "0x1::aptos_coin::AptosCoin",
+        "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+        "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT",
+        "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+        "0x1000000fa32d122c18a6a31c009ce5e71674f22d06a581bb0a15575e6addadcc::usda::USDA",
+        "0x7fd500c11216f0fe3095d0c4b8aa4d64a4e2e04f83758462f2b127255643615::thl_coin::THL",
+        "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a6764960813988dd::coin::T",
+        "0x6f986d146e4a90b828d8c12c14b6f4e003fdff11a8eecceceb63744363eaac01::mod_coin::MOD",
+        "0xd6d944ae6894c2518e32c024d26b86ce88065ea3585090f77b732e4854593848::moon_coin::MoonCoin",
+        "0x43417434fd869edee76cca2a49b3594436a71740d422c5475e69dd79050dbe2b::cell_coin::CellCoin",
+        "0xcc8a89c8dce9693d354449f1f73e60e1446d278ac113fd0fd5837a74697d853b::coin::T"
+    ],
+    "note": "Token addresses on Aptos (Mainnet), including APT (native 0x1), LayerZero bridged assets (USDC, USDT, WETH), and ecosystem tokens like THL, MOD. Note: Aptos addresses format is ADDRESS::MODULE::COIN_TYPE.",
+    "lastUpdated": "2025-12-24",
+    "chainId": "1",
+    "category": "tokens"
+}

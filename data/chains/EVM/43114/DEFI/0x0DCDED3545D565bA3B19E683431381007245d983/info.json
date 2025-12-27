@@ -1,0 +1,12 @@
+{
+    "address": "0x0DCDED3545D565bA3B19E683431381007245d983",
+    "status": "safe",
+    "chainId": "43114",
+    "chainName": "Avalanche C-Chain",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "DeFi protocol addresses on Avalanche C-Chain (Chain ID: 43114), including Trader Joe (Controller, Router), Pangolin (Router, Factory), Aave V3 Pool, Curve Gauge Factory, Benqi (sAVAX)"
+    }
+}

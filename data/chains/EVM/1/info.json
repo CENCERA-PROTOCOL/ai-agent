@@ -1,0 +1,26 @@
+{
+    "name": "Ethereum Mainnet",
+    "chainId": 1,
+    "shortName": "eth",
+    "chain": "ETH",
+    "networkId": 1,
+    "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+    },
+    "rpc": [
+        "https://cloudflare-eth.com",
+        "https://eth.llamarpc.com",
+        "https://rpc.ankr.com/eth"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "Etherscan",
+            "url": "https://etherscan.io",
+            "standard": "EIP3091"
+        }
+    ],
+    "infoURL": "https://ethereum.org"
+}

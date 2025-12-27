@@ -1,0 +1,12 @@
+{
+    "address": "0x1cb1a5e65610aeff2551a50f76a87a7d3fb649c6",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on Ethereum Mainnet (Chain ID: 1)"
+    }
+}

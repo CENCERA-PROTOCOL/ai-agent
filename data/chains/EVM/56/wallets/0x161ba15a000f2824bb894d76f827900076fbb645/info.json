@@ -1,0 +1,12 @@
+{
+    "address": "0x161ba15a000f2824bb894d76f827900076fbb645",
+    "status": "safe",
+    "chainId": "56",
+    "chainName": "Binance Smart Chain",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on Binance Smart Chain (Chain ID: 56), including Binance Hot Wallets"
+    }
+}

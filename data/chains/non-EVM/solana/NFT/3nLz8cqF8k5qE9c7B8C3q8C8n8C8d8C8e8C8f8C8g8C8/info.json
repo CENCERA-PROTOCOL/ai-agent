@@ -1,0 +1,12 @@
+{
+    "address": "3nLz8cqF8k5qE9c7B8C3q8C8n8C8d8C8e8C8f8C8g8C8",
+    "status": "safe",
+    "chainId": "solana",
+    "chainName": "Solana",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection identifiers on Solana are often First Creator Addresses or Candy Machine IDs. Listed: Mad Lads (Creator), Tensorians, Claynosaurz details vary by marketplace indexing."
+    }
+}

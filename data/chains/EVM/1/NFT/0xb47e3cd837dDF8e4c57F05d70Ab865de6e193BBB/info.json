@@ -1,0 +1,12 @@
+{
+    "address": "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "CryptoPunks",
+        "note": "NFT collection addresses on Ethereum Mainnet (Chain ID: 1)"
+    }
+}

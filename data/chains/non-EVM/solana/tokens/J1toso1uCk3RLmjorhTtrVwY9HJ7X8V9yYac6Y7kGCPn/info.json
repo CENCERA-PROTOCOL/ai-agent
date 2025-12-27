@@ -1,0 +1,12 @@
+{
+    "address": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+    "status": "safe",
+    "chainId": "solana",
+    "chainName": "Solana",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Jito Staked SOL",
+        "note": "Token addresses on Solana (Mainnet Beta), including SOL (native), USDC, USDT, JUP, BONK, WIF, PYTH, JitoSOL, RENDER, mSOL, KMNO, ORCA"
+    }
+}

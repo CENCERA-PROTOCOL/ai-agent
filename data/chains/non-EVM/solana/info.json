@@ -1,0 +1,24 @@
+{
+    "name": "Solana Mainnet Beta",
+    "chainId": "solana",
+    "shortName": "sol",
+    "chain": "Solana",
+    "nativeCurrency": {
+        "name": "Solana",
+        "symbol": "SOL",
+        "decimals": 9
+    },
+    "rpc": [
+        "https://api.mainnet-beta.solana.com",
+        "https://solana-api.projectserum.com"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "Solscan",
+            "url": "https://solscan.io",
+            "standard": "none"
+        }
+    ],
+    "infoURL": "https://solana.com"
+}

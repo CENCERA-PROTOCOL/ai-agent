@@ -1,0 +1,12 @@
+{
+    "address": "9uyDy9VDBw4K7xoSkhmCAm8NAFCwu4pkF6JeHUCtVKcX",
+    "status": "safe",
+    "chainId": "solana",
+    "chainName": "Solana",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Phantom Official Wallet",
+        "note": "Wallet and Bridge addresses on Solana: FTX Cold Wallets (known), Wormhole Bridge Program."
+    }
+}

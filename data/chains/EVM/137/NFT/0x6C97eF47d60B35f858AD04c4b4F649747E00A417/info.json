@@ -1,0 +1,12 @@
+{
+    "address": "0x6C97eF47d60B35f858AD04c4b4F649747E00A417",
+    "status": "safe",
+    "chainId": "137",
+    "chainName": "Polygon",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on Polygon (Chain ID: 137), including Trump Trading Cards, Aavegotchi, Lens Protocol, Reddit Avatars, etc."
+    }
+}

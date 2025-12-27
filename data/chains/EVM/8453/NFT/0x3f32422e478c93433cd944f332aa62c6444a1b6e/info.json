@@ -1,0 +1,12 @@
+{
+    "address": "0x3f32422e478c93433cd944f332aa62c6444a1b6e",
+    "status": "safe",
+    "chainId": "8453",
+    "chainName": "Base",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on Base (Chain ID: 8453), including Onchain Summer, Aerodrome (NFT)"
+    }
+}

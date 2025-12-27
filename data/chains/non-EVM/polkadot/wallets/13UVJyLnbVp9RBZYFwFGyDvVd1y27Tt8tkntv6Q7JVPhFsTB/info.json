@@ -1,0 +1,12 @@
+{
+    "address": "13UVJyLnbVp9RBZYFwFGyDvVd1y27Tt8tkntv6Q7JVPhFsTB",
+    "status": "safe",
+    "chainId": "polkadot",
+    "chainName": "Polkadot",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Polkadot Council Wallet",
+        "note": "Wallet addresses on Polkadot: Polkadot Treasury Address (13UVJy...). System accounts manage funds. Address format is SS58 (starts with '1' for Polkadot Relay Chain)."
+    }
+}

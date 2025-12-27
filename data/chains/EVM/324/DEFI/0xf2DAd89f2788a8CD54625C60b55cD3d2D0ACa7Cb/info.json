@@ -1,0 +1,12 @@
+{
+    "address": "0xf2DAd89f2788a8CD54625C60b55cD3d2D0ACa7Cb",
+    "status": "safe",
+    "chainId": "324",
+    "chainName": "zkSync Era",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "DeFi protocol addresses on ZKsync Era (Chain ID: 324), including SyncSwap, Mute.io, iZiSwap, Maverick, ReactorFusion"
+    }
+}

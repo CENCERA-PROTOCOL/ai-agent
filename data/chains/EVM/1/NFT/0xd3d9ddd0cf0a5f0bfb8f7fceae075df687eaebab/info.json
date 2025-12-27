@@ -1,0 +1,12 @@
+{
+    "address": "0xd3d9ddd0cf0a5f0bfb8f7fceae075df687eaebab",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Mekaverse",
+        "note": "NFT collection addresses on Ethereum Mainnet (Chain ID: 1)"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "address": "0xda3bd1fe29e46a51d2f778d91f6cf1bc8a92fd",
+    "status": "safe",
+    "chainId": "sui",
+    "chainName": "Sui",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Sui Foundation Wallet",
+        "note": "Wallet and Bridge addresses for Sui interaction. Sui Bridge Contract (Ethereum side) listed. Foundation wallets are not publicly labeled. Mysten Labs treasury varies."
+    }
+}

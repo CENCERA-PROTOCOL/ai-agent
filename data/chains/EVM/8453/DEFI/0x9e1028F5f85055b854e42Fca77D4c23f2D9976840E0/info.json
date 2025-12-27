@@ -1,0 +1,12 @@
+{
+    "address": "0x9e1028F5f85055b854e42Fca77D4c23f2D9976840E0",
+    "status": "safe",
+    "chainId": "8453",
+    "chainName": "Base",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "DeFi protocol addresses on Base (Chain ID: 8453), including Aerodrome Router, Uniswap V3, Aave V3 Oracle, Compound (COMP)"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "address": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "IMX",
+        "note": "Token addresses on Ethereum Mainnet (Chain ID: 1). Includes Top 50 generic ERC20 tokens."
+    }
+}

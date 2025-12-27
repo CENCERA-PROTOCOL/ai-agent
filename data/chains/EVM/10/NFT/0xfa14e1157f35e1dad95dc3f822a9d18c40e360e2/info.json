@@ -1,0 +1,12 @@
+{
+    "address": "0xfa14e1157f35e1dad95dc3f822a9d18c40e360e2",
+    "status": "safe",
+    "chainId": "10",
+    "chainName": "Optimism",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on Optimism Mainnet (Chain ID: 10)"
+    }
+}

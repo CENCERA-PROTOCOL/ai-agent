@@ -1,0 +1,12 @@
+{
+    "address": "0xd9C500DfF816a1Da21A48A732d3498Bf09dc9AEB",
+    "status": "safe",
+    "chainId": "56",
+    "chainName": "Binance Smart Chain",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Venus Controller",
+        "note": "DeFi protocol addresses on Binance Smart Chain (Chain ID: 56), including PancakeSwap V2 Router, Venus Controller, Alpaca Token"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "address": "0x9816C636dCceCb0782487431f3E944c66Cbf130c",
+    "status": "safe",
+    "chainId": "250",
+    "chainName": "Fantom",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on Fantom (Chain ID: 250), including Fantom Foundation and others"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "address": "0x5d1f47ea69bb0de31c313d7acf89b890dbb8991ea8e03c6c355171f84bb1ba4a",
+    "status": "safe",
+    "chainId": "sui",
+    "chainName": "Sui",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Aftermath Finance",
+        "note": "DeFi Protocol Package IDs on Sui: Cetus (CLMM), NAVI (Lending), Scallop (Package), Turbos (Core), Aftermath (AMM), Suilend (Core)."
+    }
+}

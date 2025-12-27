@@ -1,0 +1,23 @@
+{
+    "name": "Aptos Mainnet",
+    "chainId": "1",
+    "shortName": "apt",
+    "chain": "Aptos",
+    "nativeCurrency": {
+        "name": "Aptos",
+        "symbol": "APT",
+        "decimals": 8
+    },
+    "rpc": [
+        "https://fullnode.mainnet.aptoslabs.com/v1"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "Aptos Explorer",
+            "url": "https://explorer.aptoslabs.com",
+            "standard": "none"
+        }
+    ],
+    "infoURL": "https://aptosfoundation.org"
+}

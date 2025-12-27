@@ -1,0 +1,12 @@
+{
+    "address": "0x4548405d45d3570377ee7034b22c74d0e7040212",
+    "status": "safe",
+    "chainId": "250",
+    "chainName": "Fantom",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on Fantom (Chain ID: 250), including Portalheads, Pumpkittens"
+    }
+}

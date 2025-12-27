@@ -1,0 +1,11 @@
+{
+    "address": "0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B",
+    "status": "safe",
+    "chainId": "1",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "MakerDAO Vault",
+        "note": "DeFi protocol addresses on Ethereum Mainnet (Chain ID: 1), including Uniswap, Aave, Compound, MakerDAO, SushiSwap, Balancer, Curve, Lido"
+    }
+}

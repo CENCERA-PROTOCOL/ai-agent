@@ -1,0 +1,12 @@
+{
+    "address": "DOT",
+    "status": "safe",
+    "chainId": "polkadot",
+    "chainName": "Polkadot",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Polkadot Native Token",
+        "note": "Token addresses on Polkadot. 'DOT' is native on Relay Chain. Asset Hub assets are identified by integer IDs: USDT (1984), USDC (1337), DED (30)."
+    }
+}

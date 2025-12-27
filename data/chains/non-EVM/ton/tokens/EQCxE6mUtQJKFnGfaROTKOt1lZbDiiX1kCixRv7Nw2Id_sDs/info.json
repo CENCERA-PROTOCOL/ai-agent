@@ -1,0 +1,12 @@
+{
+    "address": "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+    "status": "safe",
+    "chainId": "ton",
+    "chainName": "TON (The Open Network)",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "SCALE",
+        "note": "Token addresses on TON (Jetton Master Contracts). Toncoin (native), USDT-TON, NOT, STON, SCALE (DeDust), EVAA, STORM."
+    }
+}

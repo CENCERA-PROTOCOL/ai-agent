@@ -1,0 +1,12 @@
+{
+    "address": "0xf5b509bB0909a69B1c207E495f687a596C168E12",
+    "status": "safe",
+    "chainId": "137",
+    "chainName": "Polygon",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "DeFi protocol addresses on Polygon (Chain ID: 137), including QuickSwap, Aave V3, Uniswap V3, Curve, Balancer"
+    }
+}

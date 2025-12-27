@@ -1,0 +1,12 @@
+{
+    "address": "0xa0E390e9ceA0D0e8cd40048ced9fA9EA10D71639",
+    "status": "safe",
+    "chainId": "137",
+    "chainName": "Polygon",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Token addresses on Polygon (Chain ID: 137), including POL, WETH, AAVE, DAI, QuickSwap tokens"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "scamAddresses": [],
+    "safeAddresses": [],
+    "note": "NFTs on Cosmos Hub: Primarily exist on consumer chains like Stargaze or via ICS-721 (wip). Direct NFT collections on recent Hub upgrades (Gaia v12+) are not yet widely indexed by static contract addresses.",
+    "lastUpdated": "2025-12-24",
+    "chainId": "cosmoshub-4",
+    "category": "NFT"
+}

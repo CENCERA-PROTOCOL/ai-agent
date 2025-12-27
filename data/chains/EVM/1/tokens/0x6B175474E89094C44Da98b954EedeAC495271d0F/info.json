@@ -1,0 +1,12 @@
+{
+    "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "DAI",
+        "note": "Token addresses on Ethereum Mainnet (Chain ID: 1). Includes Top 50 generic ERC20 tokens."
+    }
+}

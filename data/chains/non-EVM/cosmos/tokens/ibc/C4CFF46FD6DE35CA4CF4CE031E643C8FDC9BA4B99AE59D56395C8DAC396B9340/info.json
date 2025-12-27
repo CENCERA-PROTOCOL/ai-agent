@@ -1,0 +1,12 @@
+{
+    "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE59D56395C8DAC396B9340",
+    "status": "safe",
+    "chainId": "cosmoshub-4",
+    "chainName": "Cosmoshub-4",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Token addresses on Cosmos Hub (Chain ID: cosmoshub-4). 'uatom' is the native token. IBC denoms listed are for Osmosis (OSMO), Axelar USDC, and others commonly bridged. IBC denoms are path-dependent and may vary."
+    }
+}

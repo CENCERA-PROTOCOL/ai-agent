@@ -1,0 +1,17 @@
+{
+    "scamAddresses": [],
+    "safeAddresses": [
+        "0x2::sui::SUI",
+        "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c:coin:COIN",
+        "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf:coin:COIN",
+        "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS",
+        "0xa99b8952d4f7d947ea77fe0ecdcc9e5fc0bcab2841d6e2a5aa00c3044e5544b5::navx::NAVX",
+        "0x7016aae72cfc67f2f3c02b756e63d8731925a1b9485763g09918352751893539::sca::SCA",
+        "0x5d1f47ea69bb0de31c313d7acf89b890dbb8991ea8e03c6c355171f84bb1ba4a::turbos::TURBOS",
+        "0xdeeb7a4662eec9f2f3def03fb937a663dddaa2e215b8078a284d026b7946c270::deep::DEEP"
+    ],
+    "note": "Token addresses on Sui (Coin Types). SUI (native), USDC (Wormhole/Portal), USDT (Portal), CETUS, NAVX, SCA (Scallop), TURBOS, DEEP.",
+    "lastUpdated": "2025-12-24",
+    "chainId": "sui",
+    "category": "tokens"
+}

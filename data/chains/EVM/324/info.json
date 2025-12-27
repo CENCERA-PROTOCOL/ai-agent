@@ -1,0 +1,26 @@
+{
+    "name": "zkSync Era Mainnet",
+    "chainId": 324,
+    "shortName": "zksync",
+    "chain": "ETH",
+    "networkId": 324,
+    "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+    },
+    "rpc": [
+        "https://mainnet.era.zksync.io",
+        "https://zksync.llamarpc.com",
+        "https://rpc.ankr.com/zksync_era"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "ZKsync Era Block Explorer",
+            "url": "https://explorer.zksync.io",
+            "standard": "EIP3091"
+        }
+    ],
+    "infoURL": "https://zksync.io"
+}

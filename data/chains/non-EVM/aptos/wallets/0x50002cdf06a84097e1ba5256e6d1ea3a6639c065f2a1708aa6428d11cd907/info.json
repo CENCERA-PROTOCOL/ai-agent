@@ -1,0 +1,12 @@
+{
+    "address": "0x50002cdf06a84097e1ba5256e6d1ea3a6639c065f2a1708aa6428d11cd907",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "1",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on Aptos, including Aptos Foundation and LayerZero Aptos Bridge Contract"
+    }
+}

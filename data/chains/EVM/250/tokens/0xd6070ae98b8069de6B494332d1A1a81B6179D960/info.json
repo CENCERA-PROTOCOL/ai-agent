@@ -1,0 +1,12 @@
+{
+    "address": "0xd6070ae98b8069de6B494332d1A1a81B6179D960",
+    "status": "safe",
+    "chainId": "250",
+    "chainName": "Fantom",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Token addresses on Fantom (Chain ID: 250), including WFTM, BOO, BEETS, SCREAM, GEIST, USDC, etc."
+    }
+}

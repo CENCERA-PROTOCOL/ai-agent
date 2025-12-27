@@ -1,0 +1,12 @@
+{
+    "address": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Mutant Ape Yacht Club",
+        "note": "NFT collection addresses on Ethereum Mainnet (Chain ID: 1)"
+    }
+}

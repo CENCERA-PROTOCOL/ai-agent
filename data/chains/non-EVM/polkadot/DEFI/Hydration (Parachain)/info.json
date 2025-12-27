@@ -1,0 +1,12 @@
+{
+    "address": "Hydration (Parachain)",
+    "status": "safe",
+    "chainId": "polkadot",
+    "chainName": "Polkadot",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Hydration DEX",
+        "note": "DeFi on Polkadot: Primarily exists on specialized Parachains (Hydration, Interlay, Bifrost) rather than the Relay Chain. Asset Hub serves as a reserve. Addresses are parachain-specific SS58 formats."
+    }
+}

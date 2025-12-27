@@ -1,0 +1,132 @@
+{
+    "systemInfo": {
+        "description": "Centralized registry of supported blockchain networks and their metadata.",
+        "version": "1.0.0",
+        "lastUpdated": "2025-12-24"
+    },
+    "chainCategories": [
+        "EVM",
+        "non-EVM"
+    ],
+    "chains": {
+        "EVM": [
+            {
+                "name": "Ethereum Mainnet",
+                "directory": "1",
+                "chainId": 1,
+                "type": "L1",
+                "currency": "ETH"
+            },
+            {
+                "name": "Optimism Mainnet",
+                "directory": "10",
+                "chainId": 10,
+                "type": "L2 (Optimistic Rollup)",
+                "currency": "ETH"
+            },
+            {
+                "name": "BNB Smart Chain",
+                "directory": "56",
+                "chainId": 56,
+                "type": "L1",
+                "currency": "BNB"
+            },
+            {
+                "name": "Polygon Mainnet",
+                "directory": "137",
+                "chainId": 137,
+                "type": "Sidechain / L2",
+                "currency": "POL"
+            },
+            {
+                "name": "Fantom Opera",
+                "directory": "250",
+                "chainId": 250,
+                "type": "L1 (DAG)",
+                "currency": "FTM"
+            },
+            {
+                "name": "zkSync Era",
+                "directory": "324",
+                "chainId": 324,
+                "type": "L2 (ZK-Rollup)",
+                "currency": "ETH"
+            },
+            {
+                "name": "Base",
+                "directory": "8453",
+                "chainId": 8453,
+                "type": "L2 (Optimistic Rollup)",
+                "currency": "ETH"
+            },
+            {
+                "name": "Arbitrum One",
+                "directory": "42161",
+                "chainId": 42161,
+                "type": "L2 (Optimistic Rollup)",
+                "currency": "ETH"
+            },
+            {
+                "name": "Avalanche C-Chain",
+                "directory": "43114",
+                "chainId": 43114,
+                "type": "L1",
+                "currency": "AVAX"
+            }
+        ],
+        "non-EVM": [
+            {
+                "name": "Aptos",
+                "directory": "aptos",
+                "chainId": "1",
+                "type": "L1 (Move)",
+                "currency": "APT"
+            },
+            {
+                "name": "Cosmos Hub",
+                "directory": "cosmos",
+                "chainId": "cosmoshub-4",
+                "type": "L1 (Cosmos SDK)",
+                "currency": "ATOM"
+            },
+            {
+                "name": "Polkadot",
+                "directory": "polkadot",
+                "chainId": "polkadot",
+                "type": "L0 (Relay Chain)",
+                "currency": "DOT"
+            },
+            {
+                "name": "Solana",
+                "directory": "solana",
+                "chainId": "solana",
+                "type": "L1",
+                "currency": "SOL"
+            },
+            {
+                "name": "Sui",
+                "directory": "sui",
+                "chainId": "sui",
+                "type": "L1 (Move)",
+                "currency": "SUI"
+            },
+            {
+                "name": "The Open Network",
+                "directory": "ton",
+                "chainId": "ton",
+                "type": "L1",
+                "currency": "TON"
+            }
+        ]
+    },
+    "importantPaths": {
+        "baseDir": "data/chains",
+        "structure": {
+            "tokens": "tokens/addresses.json",
+            "nfts": "NFT/addresses.json",
+            "defi": "DEFI/addresses.json",
+            "wallets": "wallets/addresses.json",
+            "info": "info.json"
+        }
+    }
+}

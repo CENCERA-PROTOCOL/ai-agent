@@ -1,0 +1,26 @@
+{
+    "name": "Base",
+    "chainId": 8453,
+    "shortName": "base",
+    "chain": "ETH",
+    "networkId": 8453,
+    "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+    },
+    "rpc": [
+        "https://mainnet.base.org",
+        "https://base.llamarpc.com",
+        "https://rpc.ankr.com/base"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "BaseScan",
+            "url": "https://basescan.org",
+            "standard": "EIP3091"
+        }
+    ],
+    "infoURL": "https://base.org"
+}

@@ -1,0 +1,23 @@
+{
+  "bytecodePatterns": [
+    {
+      "id": "honeypot_transfer_lock",
+      "pattern": "ff",
+      "threatType": "honeypot",
+      "description": "Contains SELFDESTRUCT which can lock funds permanently"
+    },
+    {
+      "id": "hidden_mint_function",
+      "pattern": "6040",
+      "threatType": "unlimited_mint",
+      "description": "May contain hidden minting functionality"
+    },
+    {
+      "id": "delegatecall_proxy",
+      "pattern": "f4",
+      "threatType": "drainer_contract",
+      "description": "Uses DELEGATECALL which can execute arbitrary code"
+    }
+  ],
+  "lastUpdated": "2025-12-24T11:49:43.156Z"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Avalanche C-Chain",
+    "chainId": 43114,
+    "shortName": "avax",
+    "chain": "AVAX",
+    "networkId": 43114,
+    "nativeCurrency": {
+        "name": "Avalanche",
+        "symbol": "AVAX",
+        "decimals": 18
+    },
+    "rpc": [
+        "https://api.avax.network/ext/bc/C/rpc",
+        "https://avalanche.llamarpc.com",
+        "https://rpc.ankr.com/avalanche"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "SnowTrace",
+            "url": "https://snowtrace.io",
+            "standard": "EIP3091"
+        }
+    ],
+    "infoURL": "https://www.avax.network"
+}

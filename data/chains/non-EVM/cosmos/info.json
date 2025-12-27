@@ -1,0 +1,24 @@
+{
+    "name": "Cosmos Hub",
+    "chainId": "cosmoshub-4",
+    "shortName": "atom",
+    "chain": "Cosmos",
+    "nativeCurrency": {
+        "name": "Atom",
+        "symbol": "ATOM",
+        "decimals": 6
+    },
+    "rpc": [
+        "https://rpc.cosmos.network",
+        "https://cosmos-rpc.polkachu.com"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "Mintscan",
+            "url": "https://www.mintscan.io/cosmos",
+            "standard": "none"
+        }
+    ],
+    "infoURL": "https://cosmos.network"
+}

@@ -1,0 +1,12 @@
+{
+    "address": "0x3d4e44eb1374240ce5f1b871ab261cd16335b76a",
+    "status": "safe",
+    "chainId": "8453",
+    "chainName": "Base",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on Base (Chain ID: 8453), including Base Bridge and official Coinbase hot wallets"
+    }
+}

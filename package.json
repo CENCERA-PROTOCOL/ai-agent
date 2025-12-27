@@ -1,0 +1,27 @@
+{
+    "name": "cencera-ai-engine",
+    "version": "1.0.0",
+    "description": "Custom AI system for Cencera Trust Score analysis",
+    "main": "aiCore.ts",
+    "scripts": {
+        "start": "ts-node cli.ts",
+        "clean": "rm -rf node_modules"
+    },
+    "keywords": [
+        "ai",
+        "blockchain",
+        "security",
+        "trust-score"
+    ],
+    "author": "TOPAY FOUNDATION",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.3",
+        "viem": "^2.43.3"
+    }
+}

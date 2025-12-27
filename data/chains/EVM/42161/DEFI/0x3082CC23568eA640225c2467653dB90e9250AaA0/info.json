@@ -1,0 +1,12 @@
+{
+    "address": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
+    "status": "safe",
+    "chainId": "42161",
+    "chainName": "Arbitrum One",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "DeFi protocol addresses on Arbitrum One (Chain ID: 42161), including GMX, Camelot, Radiant, Aave V3, Uniswap V3, SushiSwap"
+    }
+}

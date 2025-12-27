@@ -1,0 +1,12 @@
+{
+    "address": "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+    "status": "safe",
+    "chainId": "324",
+    "chainName": "zkSync Era",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Token addresses on ZKsync Era (Chain ID: 324), including ZK, ETH, USDC, USDT, WETH, MAV, RF, etc."
+    }
+}

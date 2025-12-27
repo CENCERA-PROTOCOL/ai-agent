@@ -1,0 +1,12 @@
+{
+    "address": "EQBKMfjX_a_dsOLm-juxyVZytFP7_KKnzGv6J01kGc72gVBp",
+    "status": "safe",
+    "chainId": "ton",
+    "chainName": "TON (The Open Network)",
+    "category": "tokens",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "TON Station",
+        "note": "Token addresses on TON (Jetton Master Contracts). Toncoin (native), USDT-TON, NOT, STON, SCALE (DeDust), EVAA, STORM."
+    }
+}

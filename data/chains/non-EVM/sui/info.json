@@ -1,0 +1,24 @@
+{
+    "name": "Sui Mainnet",
+    "chainId": "sui",
+    "shortName": "sui",
+    "chain": "Sui",
+    "nativeCurrency": {
+        "name": "Sui",
+        "symbol": "SUI",
+        "decimals": 9
+    },
+    "rpc": [
+        "https://fullnode.mainnet.sui.io",
+        "https://rpc.mainnet.sui.io"
+    ],
+    "faucets": [],
+    "explorers": [
+        {
+            "name": "SuiVision",
+            "url": "https://suivision.xyz",
+            "standard": "none"
+        }
+    ],
+    "infoURL": "https://sui.io"
+}

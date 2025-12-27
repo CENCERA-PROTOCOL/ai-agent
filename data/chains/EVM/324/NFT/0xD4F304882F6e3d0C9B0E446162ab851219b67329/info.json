@@ -1,0 +1,12 @@
+{
+    "address": "0xD4F304882F6e3d0C9B0E446162ab851219b67329",
+    "status": "safe",
+    "chainId": "324",
+    "chainName": "zkSync Era",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "NFT collection addresses on ZKsync Era (Chain ID: 324), including ZK NFT Factory and others (Note: Tevaera uses ERC20 for main utility)"
+    }
+}

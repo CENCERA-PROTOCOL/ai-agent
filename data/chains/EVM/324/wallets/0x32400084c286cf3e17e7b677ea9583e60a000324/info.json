@@ -1,0 +1,12 @@
+{
+    "address": "0x32400084c286cf3e17e7b677ea9583e60a000324",
+    "status": "safe",
+    "chainId": "324",
+    "chainName": "zkSync Era",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on ZKsync Era (Chain ID: 324), including ZKsync Main Contract and other system contracts"
+    }
+}

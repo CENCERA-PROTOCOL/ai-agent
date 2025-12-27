@@ -1,0 +1,12 @@
+{
+    "address": "0x8eb8a3b98659cce290402893d0123abb75e3ab28",
+    "status": "safe",
+    "chainId": "43114",
+    "chainName": "Avalanche C-Chain",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on Avalanche C-Chain (Chain ID: 43114), including Binance Hot Wallet and Bridge contracts"
+    }
+}

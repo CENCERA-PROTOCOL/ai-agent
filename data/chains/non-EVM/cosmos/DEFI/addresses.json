@@ -1,0 +1,8 @@
+{
+    "scamAddresses": [],
+    "safeAddresses": [],
+    "note": "DeFi on Cosmos Hub: Primarily driven by Consumer Chains (Neutron, Stride) and Module Accounts (Liquid Staking Module). No traditional 'smart contract addresses' on the Hub itself. 'Module: liquidstaking' and 'Module: distribution' are key.",
+    "lastUpdated": "2025-12-24",
+    "chainId": "cosmoshub-4",
+    "category": "DEFI"
+}

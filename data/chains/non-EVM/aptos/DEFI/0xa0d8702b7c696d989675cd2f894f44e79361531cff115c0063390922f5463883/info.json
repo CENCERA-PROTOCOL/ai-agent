@@ -1,0 +1,12 @@
+{
+    "address": "0xa0d8702b7c696d989675cd2f894f44e79361531cff115c0063390922f5463883",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "1",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "DeFi protocol addresses on Aptos, including LiquidSwap (Module + Resource Account), Thala Finance (Main + Swap Resource)"
+    }
+}

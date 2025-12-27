@@ -1,0 +1,12 @@
+{
+    "address": "0xf95b06141ed4a174f239417323bde3f209b972f5930d8521ea38a52aff3a6ddf",
+    "status": "safe",
+    "chainId": "sui",
+    "chainName": "Sui",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Scallop Protocol",
+        "note": "DeFi Protocol Package IDs on Sui: Cetus (CLMM), NAVI (Lending), Scallop (Package), Turbos (Core), Aftermath (AMM), Suilend (Core)."
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+    "status": "safe",
+    "chainId": "solana",
+    "chainName": "Solana",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Raydium V4 Liquidity Pool",
+        "note": "DeFi protocol PROGRAM IDs on Solana: Jupiter (Program), Raydium V4 (Liquidity), Orca Whirlpools, Marinade Governance, Raydium CLMM/Farming."
+    }
+}

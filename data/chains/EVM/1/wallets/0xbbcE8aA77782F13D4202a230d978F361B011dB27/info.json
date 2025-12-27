@@ -1,0 +1,12 @@
+{
+    "address": "0xbbcE8aA77782F13D4202a230d978F361B011dB27",
+    "status": "safe",
+    "chainId": "1",
+    "chainName": "Ethereum Mainnet",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Unknown Contract",
+        "note": "Wallet addresses on Ethereum Mainnet (Chain ID: 1), including Vitalik, Foundations, Bridges, and Exchange Cold Wallets"
+    }
+}

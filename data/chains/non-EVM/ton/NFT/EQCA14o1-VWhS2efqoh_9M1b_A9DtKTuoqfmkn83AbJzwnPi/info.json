@@ -1,0 +1,12 @@
+{
+    "address": "EQCA14o1-VWhS2efqoh_9M1b_A9DtKTuoqfmkn83AbJzwnPi",
+    "status": "safe",
+    "chainId": "ton",
+    "chainName": "TON (The Open Network)",
+    "category": "NFT",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "TON Diamonds NFT",
+        "note": "NFTs on TON: Telegram Usernames and Anonymous Numbers are major collections traded on Fragment. Individual items have unique addresses. 'EQCA1...' is the standard NFT Collection contract code hash or a common reference."
+    }
+}

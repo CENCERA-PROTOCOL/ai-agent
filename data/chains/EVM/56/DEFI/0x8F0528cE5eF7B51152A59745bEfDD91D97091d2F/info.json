@@ -1,0 +1,12 @@
+{
+    "address": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
+    "status": "safe",
+    "chainId": "56",
+    "chainName": "Binance Smart Chain",
+    "category": "DEFI",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "Alpaca Token",
+        "note": "DeFi protocol addresses on Binance Smart Chain (Chain ID: 56), including PancakeSwap V2 Router, Venus Controller, Alpaca Token"
+    }
+}

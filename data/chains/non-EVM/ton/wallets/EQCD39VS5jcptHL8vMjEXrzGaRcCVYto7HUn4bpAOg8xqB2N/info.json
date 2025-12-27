@@ -1,0 +1,12 @@
+{
+    "address": "EQCD39VS5jcptHL8vMjEXrzGaRcCVYto7HUn4bpAOg8xqB2N",
+    "status": "safe",
+    "chainId": "ton",
+    "chainName": "TON (The Open Network)",
+    "category": "wallets",
+    "lastUpdated": "2025-12-27",
+    "metadata": {
+        "name": "TON Foundation Wallet",
+        "note": "Wallet addresses on TON: TON Foundation wallet (example/known reference). Users use Tonkeeper, Wallet in Telegram, etc. Addresses start with EQ/UQ."
+    }
+}

@@ -6,7 +6,7 @@
     "category": "wallets",
     "lastUpdated": "2025-12-27",
     "metadata": {
-        "name": "Unknown Contract",
+        "name": "contracts-preprocessed/L2BaseToken.sol:L2BaseToken",
         "note": "Wallet addresses on ZKsync Era (Chain ID: 324), including ZKsync Main Contract and other system contracts"
     }
 }

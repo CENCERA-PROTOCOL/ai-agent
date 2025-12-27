@@ -6,7 +6,7 @@
     "category": "tokens",
     "lastUpdated": "2025-12-27",
     "metadata": {
-        "name": "Unknown Contract",
+        "name": "WETH",
         "note": "Token addresses on Base (Chain ID: 8453), including WETH, USDC, DAI, AERO, cbETH, DEGEN, BRETT, etc."
     }
 }

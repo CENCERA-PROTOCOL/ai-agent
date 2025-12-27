@@ -6,7 +6,7 @@
     "category": "tokens",
     "lastUpdated": "2025-12-27",
     "metadata": {
-        "name": "Unknown Contract",
+        "name": "CRV",
         "note": "Token addresses on Polygon (Chain ID: 137), including POL, WETH, AAVE, DAI, QuickSwap tokens"
     }
 }

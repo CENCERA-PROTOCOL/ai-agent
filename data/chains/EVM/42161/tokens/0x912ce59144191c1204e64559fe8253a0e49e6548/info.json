@@ -6,7 +6,7 @@
     "category": "tokens",
     "lastUpdated": "2025-12-27",
     "metadata": {
-        "name": "Unknown Contract",
+        "name": "ARB",
         "note": "Token addresses on Arbitrum One (Chain ID: 42161), including ARB, USDT, USDC, WETH, WBTC, DAI, GMX, GRAIL, RDNT"
     }
 }

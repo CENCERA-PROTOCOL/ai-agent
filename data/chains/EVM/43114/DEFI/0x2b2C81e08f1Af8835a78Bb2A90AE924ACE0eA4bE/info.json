@@ -6,7 +6,7 @@
     "category": "DEFI",
     "lastUpdated": "2025-12-27",
     "metadata": {
-        "name": "Unknown Contract",
+        "name": "SUSHI.e",
         "note": "DeFi protocol addresses on Avalanche C-Chain (Chain ID: 43114), including Trader Joe (Controller, Router), Pangolin (Router, Factory), Aave V3 Pool, Curve Gauge Factory, Benqi (sAVAX)"
     }
 }

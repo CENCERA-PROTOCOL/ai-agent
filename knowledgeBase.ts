@@ -123,7 +123,7 @@ function saveJSON(filePath: string, data: any): void {
 /**
  * Load scam addresses from all chain files + manual file
  */
-function loadAllScamAddresses(): Set<string> {
+export function loadAllScamAddresses(): Set<string> {
     const addresses = new Set<string>();
 
     // 1. Load from Chain Files
@@ -149,7 +149,7 @@ function loadAllScamAddresses(): Set<string> {
 /**
  * Load safe addresses from all chain files + manual file
  */
-function loadAllSafeAddresses(): Set<string> {
+export function loadAllSafeAddresses(): Set<string> {
     const addresses = new Set<string>();
 
     // 1. Load from Chain Files

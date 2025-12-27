@@ -5,7 +5,8 @@
     "main": "aiCore.ts",
     "scripts": {
         "start": "ts-node cli.ts",
-        "clean": "rm -rf node_modules"
+        "train:quick": "ts-node trainingPipeline.ts quick",
+        "train:production": "ts-node trainingPipeline.ts production"
     },
     "keywords": [
         "ai",
@@ -16,12 +17,18 @@
     "author": "TOPAY FOUNDATION",
     "license": "MIT",
     "devDependencies": {
+        "@types/cheerio": "^0.22.35",
         "@types/node": "^20.0.0",
+        "@types/sentiment": "^5.0.4",
         "ts-node": "^10.9.2",
         "typescript": "^5.0.0"
     },
     "dependencies": {
+        "@tensorflow/tfjs": "^4.22.0",
+        "axios": "^1.13.2",
+        "cheerio": "^1.1.2",
         "dotenv": "^17.2.3",
+        "sentiment": "^5.0.2",
         "viem": "^2.43.3"
     }
 }

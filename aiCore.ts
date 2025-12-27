@@ -12,6 +12,11 @@ import { analyzePatterns, getThreatSummary } from './patternRecognition';
 import { analyzeBehavior, getBehavioralSummary } from './behavioralAnalysis';
 import { analyzeContractSecurity, getSecuritySummary } from './contractSecurity';
 import { analyzeTransactionRisk } from './transactionRisk';
+import { analyzeOSINT, getOSINTSummary } from './osintDiscovery';
+import { analyzeSocial, getSocialSummary } from './socialAnalysis';
+import { analyzeMarketSignals, getMarketSummary } from './marketSignals';
+import { generateLLMExplanation } from './llmExplainer';
+import { saveReputationSnapshot } from './reputationHistory';
 import {
     scoreToRiskLevel,
     weightedAverage,
@@ -26,7 +31,7 @@ import {
     validateRiskConfig,
     DEFAULT_RISK_CONFIG,
 } from './config';
-import { PERFORMANCE_CONFIG } from './config';
+import { PERFORMANCE_CONFIG, ENGINE_CONFIG } from './config';
 import { BlockchainService } from './chainConnector';
 
 /**
@@ -120,26 +125,62 @@ export async function analyzeWithAI(
     const enginePromises: Promise<any>[] = [];
     const enabledEngines = config.enabledEngines || DEFAULT_RISK_CONFIG.enabledEngines;
 
+    // AI Pattern Recognition Engine
     if (enabledEngines.patternRecognition) {
         enginePromises.push(analyzePatterns(request));
     } else {
         enginePromises.push(Promise.resolve(null));
     }
 
+    // On-chain Behavioral Analysis Engine
     if (enabledEngines.behavioral) {
         enginePromises.push(analyzeBehavior(request));
     } else {
         enginePromises.push(Promise.resolve(null));
     }
 
+    // Contract Security Engine
     if (enabledEngines.contractSecurity && request.isContract) {
         enginePromises.push(analyzeContractSecurity(request));
     } else {
         enginePromises.push(Promise.resolve(null));
     }
 
+    // Transaction Risk Engine
     if (enabledEngines.transactionRisk) {
         enginePromises.push(analyzeTransactionRisk(request));
+    } else {
+        enginePromises.push(Promise.resolve(null));
+    }
+
+    // OSINT Discovery Engine (NEW)
+    let osintPromise: Promise<any>;
+    if (enabledEngines.osint) {
+        osintPromise = analyzeOSINT(request);
+        enginePromises.push(osintPromise);
+    } else {
+        osintPromise = Promise.resolve(null);
+        enginePromises.push(osintPromise);
+    }
+
+    // Social Analysis Engine (NEW) - depends on OSINT for links
+    if (enabledEngines.social) {
+        enginePromises.push(
+            osintPromise.then(osintResult =>
+                analyzeSocial(request, osintResult?.socialLinks)
+            )
+        );
+    } else {
+        enginePromises.push(Promise.resolve(null));
+    }
+
+    // Market Signals Engine (NEW) - depends on OSINT for market data
+    if (enabledEngines.market) {
+        enginePromises.push(
+            osintPromise.then(osintResult =>
+                analyzeMarketSignals(request, osintResult?.marketData)
+            )
+        );
     } else {
         enginePromises.push(Promise.resolve(null));
     }
@@ -161,7 +202,15 @@ export async function analyzeWithAI(
         return createDegradedResult(request, config);
     }
 
-    const [patternResult, behavioralResult, securityResult, transactionResult] = results;
+    const [
+        patternResult,
+        behavioralResult,
+        securityResult,
+        transactionResult,
+        osintResult,
+        socialResult,
+        marketResult
+    ] = results;
 
     // Calculate weighted AI risk score
     const aiRiskScore = calculateAIRiskScore({
@@ -169,20 +218,24 @@ export async function analyzeWithAI(
         behavioralResult,
         securityResult,
         transactionResult,
-    });
+        osintResult,
+        socialResult,
+        marketResult,
+    }, config);
 
-    // Map to risk level
-    const riskLevel = scoreToRiskLevel(aiRiskScore);
+    // Determine risk level from score
+    const riskLevel = mapRiskScoreToLevel(aiRiskScore);
 
     // Generate comprehensive summary
     const summary = generateAISummary({
-        request,
-        aiRiskScore,
         riskLevel,
         patternResult,
         behavioralResult,
         securityResult,
         transactionResult,
+        osintResult,
+        socialResult,
+        marketResult,
         config,
     });
 
@@ -193,6 +246,31 @@ export async function analyzeWithAI(
         securityResult,
         transactionResult,
     });
+
+    // Compile partial result for LLM explanation
+    const partialResult: Partial<AIAnalysisResult> = {
+        aiRiskScore,
+        riskLevel,
+        engineResults: {
+            patternRecognition: patternResult,
+            behavioral: behavioralResult,
+            contractSecurity: securityResult,
+            transactionRisk: transactionResult,
+            osint: osintResult,
+            social: socialResult,
+            market: marketResult,
+        },
+    };
+
+    // Generate LLM explanation if enabled
+    let llmExplanation;
+    if (ENGINE_CONFIG.customAI?.enabled) {
+        try {
+            llmExplanation = await generateLLMExplanation(request, partialResult);
+        } catch (error) {
+            console.log('[AICore] Custom AI explanation failed:', error);
+        }
+    }
 
     // Compile final result
     const result: AIAnalysisResult = {
@@ -205,9 +283,20 @@ export async function analyzeWithAI(
             behavioral: behavioralResult,
             contractSecurity: securityResult,
             transactionRisk: transactionResult,
+            osint: osintResult,
+            social: socialResult,
+            market: marketResult,
         },
+        llmExplanation,
         appliedConfig: config,
     };
+
+    // Save reputation snapshot
+    try {
+        await saveReputationSnapshot(request.address, result, request.chainId || '1');
+    } catch (error) {
+        console.log('[AICore] Failed to save reputation snapshot:', error);
+    }
 
     // Cache the result
     setCached(cacheKey, result, PERFORMANCE_CONFIG.cacheTTL.aiAnalysis);
@@ -216,42 +305,71 @@ export async function analyzeWithAI(
 }
 
 /**
- * Calculate weighted AI risk score from all engines
+ * Calculate weighted AI risk score from all 7 engines
+ * Weights as per project.md: 45% on-chain, 30% market, 15% social, 10% AI patterns
  */
 function calculateAIRiskScore(params: {
     patternResult: any;
     behavioralResult: any;
     securityResult: any;
     transactionResult: any;
-}): number {
-    const { patternResult, behavioralResult, securityResult, transactionResult } = params;
+    osintResult?: any;
+    socialResult?: any;
+    marketResult?: any;
+}, config: RiskConfig): number {
+    const {
+        patternResult,
+        behavioralResult,
+        securityResult,
+        transactionResult,
+        osintResult,
+        socialResult,
+        marketResult,
+    } = params;
 
     const scores: number[] = [];
     const weights: number[] = [];
 
-    // Pattern recognition (40% of AI score)
+    // On-chain behavior (45% total)
+    // Pattern recognition (20%)
     if (patternResult) {
         scores.push(patternResult.riskScore);
-        weights.push(0.40);
+        weights.push(0.20);
     }
-
-    // Behavioral analysis (30% of AI score)
+    // Behavioral analysis (15%)
     if (behavioralResult) {
         scores.push(behavioralResult.riskScore);
+        weights.push(0.15);
+    }
+    // Contract security (5%)
+    if (securityResult) {
+        scores.push(securityResult.riskScore);
+        weights.push(0.05);
+    }
+    // Transaction risk (5%)
+    if (transactionResult) {
+        scores.push(transactionResult.riskScore);
+        weights.push(0.05);
+    }
+
+    // Market signals (30%)
+    if (marketResult) {
+        scores.push(marketResult.riskScore);
         weights.push(0.30);
     }
 
-    // Contract security (20% of AI score)
-    if (securityResult) {
-        scores.push(securityResult.riskScore);
-        weights.push(0.20);
-    }
-
-    // Transaction risk (10% of AI score)
-    if (transactionResult) {
-        scores.push(transactionResult.riskScore);
+    // Social & OSINT (15%)
+    if (socialResult) {
+        scores.push(socialResult.riskScore);
         weights.push(0.10);
     }
+    if (osintResult) {
+        scores.push(osintResult.riskScore);
+        weights.push(0.05);
+    }
+
+    // AI pattern analysis (10%) - from pattern recognition
+    // Already included above in pattern recognition
 
     if (scores.length === 0) return 50; // Default medium risk
 
@@ -259,19 +377,31 @@ function calculateAIRiskScore(params: {
 }
 
 /**
+ * Map risk score to risk level
+ */
+function mapRiskScoreToLevel(score: number): 'Critical' | 'High' | 'Medium' | 'Low' | 'Safe' {
+    if (score >= 80) return 'Critical';
+    if (score >= 60) return 'High';
+    if (score >= 40) return 'Medium';
+    if (score >= 20) return 'Low';
+    return 'Safe';
+}
+
+/**
  * Generate comprehensive AI summary
  */
 function generateAISummary(params: {
-    request: AIAnalysisRequest;
-    aiRiskScore: number;
-    riskLevel: string;
+    riskLevel: 'Critical' | 'High' | 'Medium' | 'Low' | 'Safe';
     patternResult: any;
     behavioralResult: any;
     securityResult: any;
     transactionResult: any;
+    osintResult?: any;
+    socialResult?: any;
+    marketResult?: any;
     config: RiskConfig;
 }): string {
-    const { request, aiRiskScore, riskLevel, patternResult, behavioralResult, securityResult, transactionResult, config } = params;
+    const { riskLevel, patternResult, behavioralResult, securityResult, transactionResult, osintResult, socialResult, marketResult, config } = params;
 
     let summary = '';
 
@@ -288,38 +418,46 @@ function generateAISummary(params: {
         summary += '✓ **SAFE:** ';
     }
 
-    // Main analysis summary
-    const balance = parseFloat(request.balance);
-    const entityType = request.isContract
-        ? (request.tokenMetadata ? 'Token Contract' : 'Smart Contract')
-        : 'Wallet Address';
+    // Add findings from each engine
+    const findings: string[] = [];
 
-    summary += `AI analysis of ${entityType} reveals risk score of ${aiRiskScore}/100. `;
-
-    // Add specific findings
     if (patternResult && patternResult.threats.length > 0) {
-        summary += getThreatSummary(patternResult.threats) + ' ';
+        findings.push(`${patternResult.threats.length} threat pattern(s) detected`);
     }
 
-    if (behavioralResult) {
-        summary += getBehavioralSummary(behavioralResult) + ' ';
+    if (behavioralResult && behavioralResult.anomalies.length > 0) {
+        findings.push(`${behavioralResult.anomalies.length} behavioral anomaly(ies)`);
     }
 
-    if (securityResult && request.isContract) {
-        summary += getSecuritySummary(securityResult) + ' ';
+    if (securityResult && securityResult.vulnerabilities.length > 0) {
+        findings.push(`${securityResult.vulnerabilities.length} security vulnerability(ies)`);
     }
 
-    // Balance and activity summary
-    summary += `Entity holds ${balance.toFixed(4)} ETH with ${request.txCount} transaction(s). `;
+    if (osintResult && !osintResult.isVerified) {
+        findings.push('no external verification found');
+    }
 
-    // Final recommendation based on config thresholds
-    const trustScore = 100 - aiRiskScore;
-    if (trustScore >= config.safeZone) {
-        summary += '**RECOMMENDATION:** Safe to interact with standard precautions.';
-    } else if (trustScore < config.dangerZone) {
-        summary += '**RECOMMENDATION:** HIGH RISK - Avoid interaction unless verified.';
+    if (socialResult && socialResult.botProbability > 0.7) {
+        findings.push('high bot probability in social accounts');
+    }
+
+    if (marketResult && marketResult.honeypotRisk > 70) {
+        findings.push('possible honeypot detected');
+    }
+
+    if (findings.length > 0) {
+        summary += findings.join(', ') + '. ';
     } else {
-        summary += '**RECOMMENDATION:** CAUTION - Review risks before proceeding.';
+        summary += 'No critical issues detected. ';
+    }
+
+    // Final recommendation
+    if (riskLevel === 'Critical' || riskLevel === 'High') {
+        summary += '**RECOMMENDATION:** Avoid interaction unless verified through multiple sources.';
+    } else if (riskLevel === 'Medium') {
+        summary += '**RECOMMENDATION:** Exercise caution and conduct additional due diligence.';
+    } else {
+        summary += '**RECOMMENDATION:** Safe to interact with standard security practices.';
     }
 
     return summary;

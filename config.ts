@@ -23,6 +23,9 @@ export const DEFAULT_RISK_CONFIG: Required<RiskConfig> = {
         behavioral: true,
         contractSecurity: true,
         transactionRisk: true,
+        osint: true,
+        social: true,
+        market: true,
     },
 };
 
@@ -94,6 +97,51 @@ export const ENGINE_CONFIG = {
 
         /** Minimum confidence for safe transaction (0-1) */
         minSafetyConfidence: 0.7,
+    },
+
+    /** OSINT Discovery Engine Settings */
+    osint: {
+        /** Timeout for external API calls (ms) */
+        apiTimeout: 5000,
+
+        /** Enable CoinGecko integration */
+        useCoinGecko: true,
+
+        /** Enable CoinMarketCap integration (requires API key) */
+        useCoinMarketCap: !!process.env.COINMARKETCAP_API_KEY,
+    },
+
+    /** Social Analysis Engine Settings */
+    social: {
+        /** Minimum authenticity score for low risk (0-100) */
+        minAuthenticityScore: 70,
+
+        /** Maximum bot probability for low risk (0-1) */
+        maxBotProbability: 0.3,
+
+        /** Minimum account age for established accounts (days) */
+        minAccountAgeDays: 90,
+    },
+
+    /** Market Signals Engine Settings */
+    market: {
+        /** Minimum liquidity for low risk (USD) */
+        minLiquidity: 100_000,
+
+        /** Minimum 24h volume for active token (USD) */
+        minVolume24h: 10_000,
+
+        /** Maximum top holder concentration for fair distribution (%) */
+        maxTopHolderConcentration: 30,
+    },
+
+    /** Custom AI Explainer Settings */
+    customAI: {
+        /** Enable custom AI explanations (always available, no API key needed) */
+        enabled: true,
+
+        /** Timeout for explanation generation (ms) */
+        timeout: 5000,
     },
 };
 

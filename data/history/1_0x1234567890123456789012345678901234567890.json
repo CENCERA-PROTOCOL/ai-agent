@@ -1,0 +1,52 @@
+{
+  "address": "0x1234567890123456789012345678901234567890",
+  "snapshots": [
+    {
+      "timestamp": 1766851693594,
+      "trustScore": null,
+      "riskScore": null,
+      "riskLevel": "Safe",
+      "confidence": 0.49500000000000005,
+      "engineScores": {
+        "pattern": 68,
+        "behavioral": 60,
+        "transaction": 85,
+        "osint": 95,
+        "social": 50,
+        "market": 50
+      }
+    },
+    {
+      "timestamp": 1766852562940,
+      "trustScore": 39,
+      "riskScore": 61,
+      "riskLevel": "High",
+      "confidence": 0.49500000000000005,
+      "engineScores": {
+        "pattern": 68,
+        "behavioral": 60,
+        "transaction": 85,
+        "osint": 95,
+        "social": 50,
+        "market": 50
+      }
+    }
+  ],
+  "trend": "improving",
+  "anomalies": [
+    {
+      "timestamp": 1766852562940,
+      "type": "sudden_rise",
+      "description": "Trust score increased by 39.0 points",
+      "scoreChange": 39
+    },
+    {
+      "timestamp": 1766852562940,
+      "type": "new_threat",
+      "description": "Risk level changed from Safe to High",
+      "scoreChange": 39
+    }
+  ],
+  "firstSeen": 1766851693594,
+  "lastUpdated": 1766852562940
+}

@@ -28,6 +28,9 @@ export interface RiskConfig {
         behavioral?: boolean;
         contractSecurity?: boolean;
         transactionRisk?: boolean;
+        osint?: boolean;
+        social?: boolean;
+        market?: boolean;
     };
 }
 
@@ -99,7 +102,13 @@ export interface AIAnalysisResult {
         behavioral?: BehavioralAnalysisResult;
         contractSecurity?: ContractSecurityResult;
         transactionRisk?: TransactionRiskResult;
+        osint?: OSINTResult;
+        social?: SocialAnalysisResult;
+        market?: MarketSignalsResult;
     };
+
+    /** LLM-generated explanation */
+    llmExplanation?: LLMExplanation;
 
     /** Applied risk configuration (for transparency) */
     appliedConfig?: RiskConfig;
@@ -247,6 +256,153 @@ export interface TransactionRisk {
 }
 
 // ============================================================================
+// Enhanced Intelligence Module Types
+// ============================================================================
+
+// OSINT Discovery Types
+export interface OSINTResult {
+    isVerified: boolean;
+    marketData?: MarketData;
+    socialLinks: SocialLinks;
+    websiteStatus: WebsiteValidation;
+    listings: string[]; // CoinGecko, CoinMarketCap, etc.
+    riskScore: number;
+    confidence: number;
+}
+
+export interface MarketData {
+    source: 'coingecko' | 'coinmarketcap';
+    rank?: number;
+    marketCap?: number;
+    volume24h?: number;
+    priceUsd?: number;
+    priceChange24h?: number;
+    circulatingSupply?: number;
+    totalSupply?: number;
+    verified: boolean;
+}
+
+export interface SocialLinks {
+    twitter?: string;
+    telegram?: string;
+    discord?: string;
+    website?: string;
+    github?: string;
+}
+
+export interface WebsiteValidation {
+    exists: boolean;
+    hasSSL: boolean;
+    domainAge?: number; // in days
+    contentQuality: 'high' | 'medium' | 'low' | 'none';
+    riskFlags: string[];
+}
+
+// Social Analysis Types
+export interface SocialAnalysisResult {
+    platform: 'twitter' | 'telegram' | 'discord' | 'none';
+    authenticityScore: number; // 0-100
+    botProbability: number; // 0-1
+    sentiment: 'positive' | 'neutral' | 'negative' | 'warning';
+    metrics: SocialMetrics;
+    redFlags: string[];
+    riskScore: number;
+    confidence: number;
+}
+
+export interface SocialMetrics {
+    accountAge?: number; // in days
+    followerCount?: number;
+    followingCount?: number;
+    tweetCount?: number;
+    isVerified ?: boolean;
+    engagementRate ?: number; // 0-1
+    botLikelihood ?: number; // 0-1
+}
+
+// Market Signals Types
+export interface MarketSignalsResult {
+    liquidityScore: number; // 0-100
+    volumeHealth: number; // 0-100
+    distributionFairness: number; // 0-100
+    honeypotRisk: number; // 0-100
+    metrics: MarketMetrics;
+    riskScore: number;
+    confidence: number;
+}
+
+export interface MarketMetrics {
+    totalLiquidity?: number;
+    liquidityLocked?: boolean;
+    lockDuration?: number; // in days
+    volume24h?: number;
+    volume7d?: number;
+    volumeChange?: number; // percentage
+    topHolderConcentration?: number; // percentage
+    giniCoefficient?: number; // 0-1, wealth distribution
+    creatorHoldings?: number; // percentage
+    burnedTokens?: number; // percentage
+    maxSlippage?: number; // percentage
+}
+
+// LLM Explanation Types
+export interface LLMExplanation {
+    summary: string;
+    riskFactors: RiskFactor[];
+    recommendations: string[];
+    evidence: Evidence[];
+    confidence: number;
+}
+
+export interface RiskFactor {
+    category: 'contract' | 'behavioral' | 'market' | 'social' | 'pattern';
+    severity: 'critical' | 'high' | 'medium' | 'low';
+    description: string;
+    impact: string;
+}
+
+export interface Evidence {
+    type: string;
+    description: string;
+    source: string;
+    severity?: number;
+}
+
+// Reputation History Types
+export interface ReputationHistory {
+    address: string;
+    snapshots: ReputationSnapshot[];
+    trend: 'improving' | 'stable' | 'declining';
+    anomalies: HistoryAnomaly[];
+    firstSeen: number; // timestamp
+    lastUpdated: number; // timestamp
+}
+
+export interface ReputationSnapshot {
+    timestamp: number;
+    trustScore: number;
+    riskScore: number;
+    riskLevel: 'Critical' | 'High' | 'Medium' | 'Low' | 'Safe';
+    confidence: number;
+    engineScores: {
+        pattern?: number;
+        behavioral?: number;
+        security?: number;
+        transaction?: number;
+        osint?: number;
+        social?: number;
+        market?: number;
+    };
+}
+
+export interface HistoryAnomaly {
+    timestamp: number;
+    type: 'sudden_drop' | 'sudden_rise' | 'volatility' | 'new_threat';
+    description: string;
+    scoreChange: number;
+}
+
+// ============================================================================
 // Knowledge Base Types
 // ============================================================================
 
@@ -334,4 +490,14 @@ export interface ConfidenceScore {
         sampleSize: number;
         patternClarity: number;
     };
+}
+
+export interface BlockchainData {
+    address: string;
+    balance: string;
+    txCount: number;
+    isContract: boolean;
+    codeSize: number;
+    bytecode?: string;
+    ensName?: string | null;
 }
